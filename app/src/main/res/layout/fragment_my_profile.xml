@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Fragment.MyProfileFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    >
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+                <com.dbvertex.dilsayproject.customStyle.AutoScrollViewPager
+                    android:id="@+id/autoPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/semi_trans"></RelativeLayout>
+
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/autoPager"
+                    android:layout_marginBottom="10dp"
+                    app:fillColor="@color/colorPrimary"
+                    app:pageColor="@color/transparent"
+                    app:radius="4dp"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="1dp" />
+
+                <ImageView
+                    android:id="@+id/editpic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/edit"
+                    android:tint="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make sure your first picture follows"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" OUR RULES"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Personal Information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/name" />
+
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+                    android:id="@+id/nameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/gray"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/gray" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text="About Me"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp" />
+
+
+            <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+                android:id="@+id/aboutmeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:text="About Me"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/aboutmeTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Socials"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/instagramLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/instagram_myprofile" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Instagram"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/instaLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/checked_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/add" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="textCapSentences"
+                        android:text="Connect"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/facebookLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/facebook_myprofile" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Facebook"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/checked_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:src="@drawable/add" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="textCapSentences"
+                        android:text="Connected"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="My Details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/ageLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+
+                    >
+
+                   <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/age" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Age"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/ageTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ageTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/heightLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/height" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Height"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/heightTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/religionLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/religious" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Reliogion"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/religionTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/communityLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/community" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Community"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/communityTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/educationLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/education" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Education"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/educationTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/occupationLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/career" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Occupation"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/occupationTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/genderLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gender" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Gender"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/genderTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/raisedinLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="1"
+                android:background="@drawable/edittextback"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/raised_in" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Raised In"
+                        android:textColor="@color/grey"
+                        android:textSize="20sp" />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/raisedinTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="28"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="LifeStyle"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Food Prefrences"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/vegLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/greycurverectangle2"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/vegTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Vegetarian"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nonvegLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/greycurverectangle1"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/nonvegTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Non-Vegetarian"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Smoke"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/smokingLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle2"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/smokeTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Smoking"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nonsmokeLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/nonsmokeTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="No-Smoking"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/smokeocassionalLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle1"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/smokeocassionalTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Occasionally"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Drinking"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/drinkLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle2"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/drinkTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Drinking"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nondrinkLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/nondrinkTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="No-Drinking"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/drinkocassionalLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/greycurverectangle1"
+                        >
+
+                        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                            android:id="@+id/drinkocassionalTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Occasionally"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Interest"
+                    android:layout_weight="0.8"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/editLL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/edit"
+                        android:tint="@color/colorPrimary"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/grey" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/interestTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/gray" />
+
+
+
+            <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Submit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rippleeffect"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                android:id="@+id/resetBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Reset Dislikes"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/checked_bg"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                />
+            <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                android:id="@+id/deleteaccntBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Delete Account"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/yellowbackground"
+                android:layout_marginTop="20dp"
+                android:textColor="#999900"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+</layout>

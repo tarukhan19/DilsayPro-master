@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.LifestyleActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/back"
+
+        >
+
+    <include layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Food Prefrences"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/vegLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/greycurverectangle2"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/vegTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Vegetarian"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nonvegLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/greycurverectangle1"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/nonvegTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Non-Vegetarian"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Smoke"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/smokingLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle2"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/smokeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Smoking"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nonsmokeLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/nonsmokeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="No-Smoking"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/smokeocassionalLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle1"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/smokeocassionalTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Occasionally"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Drinking"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/drinkLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle2"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/drinkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Drinking"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nondrinkLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/nondrinkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="No-Drinking"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/drinkocassionalLL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/greycurverectangle1"
+                >
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                    android:id="@+id/drinkocassionalTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Occasionally"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/nextLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            >
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                />
+
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/next_arrow"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

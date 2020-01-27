@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar_main" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:weightSum="1"
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/notification" />
+
+                    </LinearLayout>
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/notificationTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.7"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="Notifications"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+
+                        android:gravity="end">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/switchButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:checked="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contactusLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/contact_us" />
+
+                    </LinearLayout>
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="Contact Us"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/clic_button" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/faqLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/faq" />
+
+                    </LinearLayout>
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="F.A.Q"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/clic_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tndcLL"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/tcicon" />
+
+                    </LinearLayout>
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="T&amp;C"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/clic_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/privacyLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/password" />
+
+                    </LinearLayout>
+
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/clic_button" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/aboutusLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_bg"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/about_us"
+                            />
+
+                    </LinearLayout>
+
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="0.8"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="About Us"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/clic_button" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Delete Account"
+
+                    android:background="@drawable/rippleeffect"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

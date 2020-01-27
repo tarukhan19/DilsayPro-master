@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    app:cardCornerRadius="10dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        >
+
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:layout_weight="0.9"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/back_LL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center|end">
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+
+                android:src="@drawable/cancel" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If your profile pic will have following things then your profile will be suspended"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sunglasses"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Sunglasses"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/face"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Only half of your face."
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/blurry"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Blurry or unclear face"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/more_person"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="More than one person"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nudity"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Nudity"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/child"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Child or adolesent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/celebrity"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Celebrity"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Continue"
+            android:background="@drawable/rippleeffect"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

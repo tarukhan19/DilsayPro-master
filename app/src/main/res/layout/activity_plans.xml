@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    android:fitsSystemWindows="true">
+    <include layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="top"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:weightSum="3"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:orientation="horizontal"
+       >
+       <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+           android:id="@+id/msgplanTV"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="@drawable/freeplan"
+           android:layout_margin="5dp"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+
+           />
+
+       <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+           android:id="@+id/likeplanTV"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_margin="5dp"
+           android:background="@drawable/goldplan"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:textColor="@color/white"
+
+           />
+
+       <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+           android:id="@+id/boostplanTV"
+
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_margin="5dp"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:textSize="18sp"
+           android:background="@drawable/platinumplan"
+
+           />
+
+   </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="5dp"
+        android:paddingEnd="@dimen/card_padding"
+        android:paddingLeft="@dimen/card_padding"
+        android:paddingRight="@dimen/card_padding"
+        android:paddingStart="@dimen/card_padding" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+         android:layout_marginBottom="20dp"
+        app:piv_animationType="swap"
+        app:piv_viewPager="@id/viewPager"
+        app:piv_selectedColor="@color/colorPrimary"
+        app:piv_unselectedColor="@color/grey"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

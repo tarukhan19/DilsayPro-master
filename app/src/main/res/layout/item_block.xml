@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                    android:id="@+id/titleTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="BLOCK &amp; REPORTS"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="0.9"
+                    android:textSize="16sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/back_LL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|end">
+
+                    <ImageView
+                        android:id="@+id/back_img"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:tint="@color/black"
+
+                        android:src="@drawable/cancel" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <RadioButton
+                    android:id="@+id/unmatchRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Unmatch User"
+                    android:textColor="@color/black"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/inapprofileRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Inaapropriate Profile"
+                    android:textColor="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/inapmsgRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Inaapropriate Messages"
+                    />
+
+                <RadioButton
+                    android:id="@+id/harasserRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Harasser"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/stolenpicRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Stolen Photograph"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/spamRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Spam"
+                    />
+
+                <RadioButton
+                    android:id="@+id/unresponsiveRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Unresponsive"
+                    />
+
+                <RadioButton
+                    android:id="@+id/notinterestedRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Not Interested"
+                    />
+
+                <RadioButton
+                    android:id="@+id/otherRB"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@color/black"
+                    android:text="Other"
+
+                    />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curverectanglepicback">
+
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+                    android:id="@+id/descripationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Description"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="@color/gray"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+            <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                android:id="@+id/sendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Send"
+                android:background="@drawable/rippleeffect"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

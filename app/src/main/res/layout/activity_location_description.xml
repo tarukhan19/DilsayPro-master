@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.LocationDescription">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_main" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Your Location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/mylocationLL"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+
+                    android:background="@drawable/edittextback"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/locationTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:gravity="center_vertical"
+                        android:hint="Your Location"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15sp" />
+
+
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/locationTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/gray" />
+
+                <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Add your description"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextback"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+
+                        android:id="@+id/descriptionET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="Add Description"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="150"
+                        android:padding="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/grey"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/descriptionTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/nextLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                        android:id="@+id/continueBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:text="Submit"
+                        android:background="@drawable/rippleeffect"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>

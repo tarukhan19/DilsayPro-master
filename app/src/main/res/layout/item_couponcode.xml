@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/gradient"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+
+
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Coupon Code"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center" />
+
+
+            <LinearLayout
+                android:id="@+id/crossImage"
+                android:layout_width="0dp"
+                android:gravity="center|end"
+                android:layout_weight="0.1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/cancel"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Please enter coupon code"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/curverectanglepicback"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            >
+            <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+                android:id="@+id/couponcodeET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:background="@null"
+                android:hint="Coupon Code"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rippleeffect"
+            >
+
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+
+                android:text="Apply"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

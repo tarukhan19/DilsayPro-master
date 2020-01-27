@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.OtpActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/back">
+        <include layout="@layout/toolbar_main" />
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter verification code sent on"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+            >
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:id="@+id/countrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+                android:id="@+id/mobileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9522335636"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/editnumber"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/edit"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter 6 - Digit code"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/otpLL1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/otpLL2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/otpLL3"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otpLL4"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textSize="14sp"
+
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/otpLL5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/otpLL6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/solidwhitecircle"
+                >
+                <com.dbvertex.dilsayproject.customStyle.EdittextLailabold
+                    android:id="@+id/otpET6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Continue"
+            android:background="@drawable/rippleeffect"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resend Code"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

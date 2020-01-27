@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".DeleteActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/toolbar_main" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you sure you want to delete your account?\n Please let us know the reason you are leaving?"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <LinearLayout
+                    android:id="@+id/reason1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/break1"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason1TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I need a break from Dil Say"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reason2"
+
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:elevation="5dp"
+
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dontlike"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason2TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I don't like Dil Say"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/reason3"
+
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:elevation="2dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/broken"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason3TV"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Something is broken"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reason4"
+
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fresh_start"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason4TV"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I want a fresh start"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/reason5"
+
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:elevation="2dp"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dilsay"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason5TV"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I met someone via Dil Say"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reason6"
+
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/deletebg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/other"
+                        android:layout_gravity="center"
+                        />
+
+                    <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                        android:id="@+id/reason6TV"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.dbvertex.dilsayproject.customStyle.ButtonLailaregular
+                android:id="@+id/continueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Continue"
+                android:background="@drawable/rippleeffect"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>

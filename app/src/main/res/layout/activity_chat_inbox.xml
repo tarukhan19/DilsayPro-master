@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Chatting.ChatInboxActivity">
+    <LinearLayout
+
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+       >
+        <include layout="@layout/toolbar_main" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:id="@+id/chatLV" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/curvell"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    >
+                    <ImageView
+                        android:id="@+id/uploadpicIV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_upload"
+                        android:layout_margin="3dp"
+                        android:tint="@color/colorPrimary"
+                        android:layout_weight="0.1"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/imageRl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="0.1"
+                        android:layout_marginRight="5dp"
+                        android:visibility="invisible"
+                        >
+
+                        <ImageView
+                            android:id="@+id/chatsendIV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/crossIV"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/ic_redcross"
+                            android:scaleType="fitXY"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <com.dbvertex.dilsayproject.customStyle.EdittextLailaregular
+                        android:id="@+id/commentET"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:hint="Say Something"
+                        android:background="@null"
+                        android:textSize="14sp"
+                        android:textColorHint="@color/gray"
+                        android:inputType="text"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/sendll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.1"
+                        android:visibility="visible"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:id="@+id/postcomment"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_send"
+                            android:tint="@color/colorPrimary"
+                            android:layout_gravity="center"
+
+                            />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar_cyclic"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:visibility="invisible"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

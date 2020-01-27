@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".TermsandConditionActivity">
+
+    <include
+        layout="@layout/toolbar_main"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:src="@drawable/tc" />
+            <com.dbvertex.dilsayproject.customStyle.TextViewLailaregular
+                android:id="@+id/webViewtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

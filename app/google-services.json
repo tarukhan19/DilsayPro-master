@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107156978757",
+    "firebase_url": "https://dilsay-ce1d3.firebaseio.com",
+    "project_id": "dilsay-ce1d3",
+    "storage_bucket": "dilsay-ce1d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107156978757:android:90f139a6e6e6f548",
+        "android_client_info": {
+          "package_name": "com.dbvertex.dilsayproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107156978757-3e1t0rf6kpoe3eurt0u1hhdd9ejno1nm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dbvertex.dilsayproject",
+            "certificate_hash": "e7057cd06dd9987596c55924e0b77cac7f63b0be"
+          }
+        },
+        {
+          "client_id": "107156978757-77e7i750p7lt69jo18nbc34k79n9lqst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPsxU3nkBpK1cRuZ8HhOzSkCJVgTqF5hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107156978757-77e7i750p7lt69jo18nbc34k79n9lqst.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "107156978757-sgges5i6pgdcvk334r9gabih6ds1i5hp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "DilSay"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

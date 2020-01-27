@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D90B91</color>
+    <color name="colorPrimaryDark">#D90B91</color>
+    <color name="colorAccent">#A62792</color>
+
+
+    <color name="black">#2b2b2b</color>
+    <color name="purple">#aa98a9</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="Maroon">#800000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="c1">#2C3E50</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="lite_gray">#26292c</color>
+    <color name="button_color">#343234</color>
+    <color name="back_color">#ECF4F7</color>
+    <color name="green">#008000</color>
+    <color name="grey">#696969</color>
+    <color name="light_grey">#EEEEEE</color>
+    <color name="white_transparent">#11FFFFFF</color>
+    <color name="drawerback">#545454</color>
+    <color name="navheader">#F1F5F8</color>
+    <color name="drawericon">#01B588</color>
+    <color name="wmitext"> #F5611D</color>
+    <color name="actionbar"> #EB5848</color>
+    <color name="accept">#47d00a</color>
+    <color name="featured">#757575</color>
+    <color name="trans">#33000000</color>
+    <color name="semi_trans">#4D000000</color>
+
+    <color name="transparent">#22ffffff</color>
+
+
+    <color name="screenback">#EEEEEE</color>
+    <color name="feature">#d2721d</color>
+</resources>

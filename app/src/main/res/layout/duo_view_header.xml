@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+   >
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:id="@+id/userpic"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:src="@drawable/contact_us"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+        android:id="@+id/usernamenav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Rahul"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+    android:id="@+id/mo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+        <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    <com.dbvertex.dilsayproject.customStyle.TextViewLailaibold
+        android:id="@+id/emailnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rahulsharma@gmail.com"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>
